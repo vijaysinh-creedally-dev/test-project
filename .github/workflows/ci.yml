@@ -8,4 +8,4 @@ on:
 
 jobs:
   quality:
-    uses: YOUR_ORG/.github/.github/workflows/reusable-lint-test.yml@main
+    uses: vijaysinh-creedally-dev/.github/.github/workflows/reusable-lint-test.yml@main
