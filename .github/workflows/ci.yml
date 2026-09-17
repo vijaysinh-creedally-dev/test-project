@@ -1,0 +1,11 @@
+name: CI
+
+on:
+  push:
+    branches: [develop, staging, main]
+  pull_request:
+    branches: [develop, staging, main]
+
+jobs:
+  quality:
+    uses: YOUR_ORG/.github/.github/workflows/reusable-lint-test.yml@main
