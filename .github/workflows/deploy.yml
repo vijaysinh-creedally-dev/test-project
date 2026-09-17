@@ -1,0 +1,13 @@
+name: Deploy
+
+on:
+  push:
+    branches: [develop, staging, main]
+
+jobs:
+  deploy:
+    uses: vijaysinh-creedally-dev/.github/.github/workflows/reusable-deploy.yml@main
+    with:
+      environment: ${{ github.ref_name }}
+    permissions:
+      contents: read
